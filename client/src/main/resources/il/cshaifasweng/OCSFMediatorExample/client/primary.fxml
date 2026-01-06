@@ -1,16 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.PrimaryController">
-   <children>
-      <Label text="Welcome" />
-      <Button mnemonicParsing="false" onAction="#sendWarning" text="Send me a warning!" />
-   </children>
-   <padding>
-      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-   </padding>
-</VBox>
+<GridPane gridLinesVisible="true" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.PrimaryController">
+
+    <!-- 3 columns -->
+    <columnConstraints>
+        <ColumnConstraints percentWidth="33.33" />
+        <ColumnConstraints percentWidth="33.33" />
+        <ColumnConstraints percentWidth="33.33" />
+    </columnConstraints>
+
+    <!-- 3 rows -->
+    <rowConstraints>
+        <RowConstraints percentHeight="33.33" />
+        <RowConstraints percentHeight="33.33" />
+        <RowConstraints percentHeight="33.33" />
+    </rowConstraints>
+
+    <children>
+        <!-- Row 0 -->
+        <Button fx:id="btn00" maxHeight="Infinity" maxWidth="Infinity" onAction="#handleCellClick" text="" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+
+        <Button fx:id="btn01" maxHeight="Infinity" maxWidth="Infinity" onAction="#handleCellClick" text="" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+        <Button fx:id="btn02" maxHeight="Infinity" maxWidth="Infinity" onAction="#handleCellClick" text="" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+
+        <!-- Row 1 -->
+        <Button fx:id="btn10" maxHeight="Infinity" maxWidth="Infinity" onAction="#handleCellClick" text="" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+
+        <Button fx:id="btn11" maxHeight="Infinity" maxWidth="Infinity" onAction="#handleCellClick" text="" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+        <Button fx:id="btn12" maxHeight="Infinity" maxWidth="Infinity" onAction="#handleCellClick" text="" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+
+        <!-- Row 2 -->
+        <Button fx:id="btn20" maxHeight="Infinity" maxWidth="Infinity" onAction="#handleCellClick" text="" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+
+        <Button fx:id="btn21" maxHeight="Infinity" maxWidth="Infinity" onAction="#handleCellClick" text="" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+        <Button fx:id="btn22" maxHeight="Infinity" maxWidth="Infinity" onAction="#handleCellClick" text="" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+    </children>
+
+</GridPane>
